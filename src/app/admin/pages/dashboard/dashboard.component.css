@@ -1,21 +1,54 @@
-.grid-container {
-  margin: 20px;
+.navigation {
+  border-radius: 37px;
+  background: white;
+  height: 73px;
 }
-
-.dashboard-card {
+.text-color{
+  color: #A4A4B1 !important;
+}
+.nav-link.active {
+  border-bottom: 4px solid #3f6cff;
+  position: relative;
+  margin-right: 60px;
+}
+.nav-link.active:after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: white;
   position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
+  right: 0;
+  bottom: -4px;
 }
-
-.more-button {
+.nav-link {
+  border-bottom: 4px solid transparent;
+  position: relative;
+  margin-right: 60px;
+  padding: 25px 0 20px 0;
+}
+.nav{
+  height: 100%;
+}
+.nav-link:after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: white;
   position: absolute;
-  top: 5px;
-  right: 10px;
+  right: 0;
+  bottom: -4px;
 }
-
-.dashboard-card-content {
-  text-align: center;
+.cardin{
+  border-radius: 35px;
+  border: none;
 }
+.back-card {
+  background: url('../../../../assets/Imagem.svg') center center no-repeat;
+  background-size: cover;
+}
+/* .back-card2 {
+  background-image: linear-gradient(to top right, rgba(0,14,210,.8), rgba(255,255,255,.8), rgba(0,255,151,.8));
+}
+.back-card3 {
+  background-image: linear-gradient(to right, rgba(196,0,210,.5), rgba(94,94,94,.5), rgba(0,85,255,.5));
+} */

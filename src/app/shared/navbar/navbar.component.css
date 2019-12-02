@@ -108,23 +108,24 @@
   right: 0;
   bottom: -4px;
 }
-.half-a-border-on-top {
-  border-top: 1px solid black;
-  position: relative;
-}
-.half-a-border-on-top:after {
-  padding: 0;
-  margin: 0;
-  display: block; /* probably not really needed? */
-  content: "";
-  width: 50%;
-  height: 1.1px;
-  background-color: white;
-  position: absolute;
-  right: 0;
-  top: -1px;
-}
+
 .mat-drawer {
   background-color: black;
   color: #fff;
+}
+.mat-drawer-container {
+  background-color: #f2f3f7;
+}
+.mat-badge-content {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3F6CFF;
+  min-width: 22px;
+  min-height: 18px;
+  text-align: center;
+  align-items: center;
+  padding: .2rem .6rem;
+  border-radius: 13px;
 }

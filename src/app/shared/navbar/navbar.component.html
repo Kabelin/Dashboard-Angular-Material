@@ -16,11 +16,11 @@
         <div class="row justify-content-between align-items-center">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" href="">Principal</a>
+              <a class="nav-link active font-weight-bold" href="">Principal</a>
             </li>
             <li class="nav-item">
               <a
-                class="nav-link text-color disabled"
+                class="nav-link text-color disabled font-weight-bold"
                 tabindex="-1"
                 aria-disabled="true"
                 >Descobrir</a
@@ -72,18 +72,22 @@
       [mode]="mobileQuery.matches ? 'over' : 'side'"
       opened="true"
     >
-      <mat-nav-list>
+      <mat-nav-list
+        style="box-shadow: inset 0px 8px 20px -18px rgba(0, 0, 0, .5) !important;"
+      >
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Home.svg"
           />
           Home</a
         >
-        <a mat-list-item style="color: #201F42 !important"
+        <a mat-list-item style="color: #201F42 !important; border-right: 4px solid #3f6cff"
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Dash.svg"
           />Dashboard</a
@@ -91,6 +95,7 @@
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Paginas.svg"
           />Páginas</a
@@ -98,13 +103,22 @@
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Plugins.svg"
-          /><i style="font-style: normal;" class="pr-4" matBadge="15" matBadgePosition="above after">Plugins</i></a
+          /><i
+            style="font-style: normal;"
+            height="30px"
+            class="w-100 mr-4"
+            matBadge="15"
+            matBadgePosition="above after"
+            >Plugins</i
+          ></a
         >
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Postag.svg"
           />Postagens</a
@@ -112,6 +126,7 @@
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Suporte.svg"
           />Suporte</a
@@ -119,6 +134,7 @@
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Midia.svg"
           />Arquivos</a
@@ -126,6 +142,7 @@
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Aparencia.svg"
           />Aparência</a
@@ -133,12 +150,17 @@
         <a mat-list-item
           ><img
             width="30px"
+            height="30px"
             class="mr-2"
             src="../../../assets/icons/Loja.svg"
           />Loja</a
         >
       </mat-nav-list>
     </mat-sidenav>
-    <mat-sidenav-content> <ng-content></ng-content></mat-sidenav-content>
+    <mat-sidenav-content
+      style="box-shadow: inset 0px 8px 20px -18px rgba(0, 0, 0, .5) !important;"
+    >
+      <ng-content></ng-content
+    ></mat-sidenav-content>
   </mat-sidenav-container>
 </div>
