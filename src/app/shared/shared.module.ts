@@ -1,24 +1,20 @@
-import { SharedModule } from './shared/shared.module';
-import { BrowserModule } from "@angular/platform-browser";
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 import { NgModule } from "@angular/core";
-
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CommonModule } from "@angular/common";
 import { LayoutModule } from "@angular/cdk/layout";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatIconModule } from "@angular/material/icon";
 import { MatListModule } from "@angular/material/list";
-import {MatBadgeModule} from '@angular/material/badge';
+import { MatBadgeModule } from "@angular/material/badge";
+
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [NavbarComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    CommonModule,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
@@ -26,9 +22,10 @@ import {MatBadgeModule} from '@angular/material/badge';
     MatIconModule,
     MatListModule,
     MatBadgeModule,
-    SharedModule
+    RouterModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  exports: [
+    NavbarComponent
+  ]
 })
-export class AppModule {}
+export class SharedModule {}

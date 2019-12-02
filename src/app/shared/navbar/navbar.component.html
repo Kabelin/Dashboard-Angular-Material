@@ -1,0 +1,144 @@
+<div class="container-aux" [class.is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="toolbar px-0 mx-0">
+    <!-- <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="snav.toggle()"
+    >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button> -->
+    <div class="row mx-0 w-100 align-items-center">
+      <div class="col-lg-2  ">
+        <img src="../../assets/Logo.svg" />
+      </div>
+      <div class="col-lg-10">
+        <div class="row justify-content-between align-items-center">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-color disabled"
+                tabindex="-1"
+                aria-disabled="true"
+                >Descobrir</a
+              >
+            </li>
+          </ul>
+          <div
+            class="d-flex search-box px-3 justify-content-between align-items-center"
+          >
+            <input
+              type="text"
+              placeholder="Procurar..."
+              class="form-control search mr-1"
+            />
+            <img
+              style="cursor: pointer;"
+              src="../../assets/Icon awesome-search.svg"
+            />
+          </div>
+          <div class="d-flex align-items-center">
+            <img
+              style="cursor: pointer;"
+              class="mr-5"
+              src="../../assets/Perfil 1.svg"
+            />
+            <img
+              style="cursor: pointer;"
+              class="mr-5"
+              src="../../assets/Notificação.svg"
+            />
+            <button
+              style="border-radius: 25px; background: #3F6CFF; color: white; cursor:pointer"
+              class="mr-2 px-4 btn font-weight-bold"
+            >
+              Novo +
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+      #snav
+      [style.marginTop.px]="mobileQuery.matches ? 56 : 0"
+      class="sidenav"
+      [fixedInViewport]="mobileQuery.matches"
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      opened="true"
+    >
+      <mat-nav-list>
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Home.svg"
+          />
+          Home</a
+        >
+        <a mat-list-item style="color: #201F42 !important"
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Dash.svg"
+          />Dashboard</a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Paginas.svg"
+          />Páginas</a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Plugins.svg"
+          /><i style="font-style: normal;" class="pr-4" matBadge="15" matBadgePosition="above after">Plugins</i></a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Postag.svg"
+          />Postagens</a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Suporte.svg"
+          />Suporte</a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Midia.svg"
+          />Arquivos</a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Aparencia.svg"
+          />Aparência</a
+        >
+        <a mat-list-item
+          ><img
+            width="30px"
+            class="mr-2"
+            src="../../../assets/icons/Loja.svg"
+          />Loja</a
+        >
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content> <ng-content></ng-content></mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

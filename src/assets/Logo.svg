@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="31" viewBox="0 0 125 31">
+  <g id="Logo" transform="translate(-32 -26)">
+    <g id="Logo_teste" data-name="Logo teste" transform="translate(7.737 -3.263)">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="12" height="12" rx="2" transform="translate(126.263 33.263)" fill="#3c6aff"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="12" height="12" rx="2" transform="translate(137.263 44.263)" fill="#201f42"/>
+    </g>
+    <text id="JORDAN" transform="translate(32 50)" fill="#201f42" font-size="22" font-family="Arial-Black, Arial" font-weight="800" letter-spacing="-0.061em"><tspan x="0" y="0">JORDAN</tspan></text>
+  </g>
+</svg>

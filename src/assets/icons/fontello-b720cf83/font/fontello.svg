@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="aparencia" unicode="&#xe800;" d="M362 496l86-87" horiz-adv-x="980" />
+
+<glyph glyph-name="dash" unicode="&#xe801;" d="M153 791v-545m0-327v139m377 733v-268m-94-5h188m-565-282h188m283 96v-422m377 881v-397m0-205v-280m-95 468h189" horiz-adv-x="1060" />
+
+<glyph glyph-name="home" unicode="&#xe802;" d="M173 229v-321h736v589m125-90l-510 385-442-385" horiz-adv-x="1115" />
+
+<glyph glyph-name="loja" unicode="&#xe803;" d="M180 266l175-354h675l170 543m94 0h-1231m509 307l-296-297m508 297l305-305" horiz-adv-x="1356" />
+
+<glyph glyph-name="midia" unicode="&#xe804;" d="M76 587v-661h1212v661h-705v187h-507" horiz-adv-x="1364" />
+
+<glyph glyph-name="paginas" unicode="&#xe805;" d="M55 795v-890h662v594l-292 297z m662-311h-370v174" horiz-adv-x="771" />
+
+<glyph glyph-name="plugins" unicode="&#xe806;" d="M420 665l394-386s-269-323-489-90 95 476 95 476z m282 112l-193-193m422-36l-193-193m-513-280l-152-152" horiz-adv-x="1004" />
+</font>
+</defs>
+</svg>

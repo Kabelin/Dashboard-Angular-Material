@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="26" viewBox="0 0 27 26">
+  <g id="Suporte" transform="translate(0.605 -2.971)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(-0.605 2.971)" fill="none" stroke="#a7a7b3" stroke-width="3">
+      <ellipse cx="13.5" cy="13" rx="13.5" ry="13" stroke="none"/>
+      <ellipse cx="13.5" cy="13" rx="12" ry="11.5" fill="none"/>
+    </g>
+    <text id="_" data-name="?" transform="translate(7.395 22.971)" fill="#a4a4b1" font-size="18" font-family="Arial-Black, Arial" font-weight="800" letter-spacing="-0.061em"><tspan x="0" y="0">?</tspan></text>
+  </g>
+</svg>

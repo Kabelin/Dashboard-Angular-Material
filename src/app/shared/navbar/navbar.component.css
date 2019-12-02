@@ -1,0 +1,130 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.mat-badge-medium.mat-badge-above .mat-badge-content {
+  top: 2px;
+}
+
+.container-aux {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.is-mobile .toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+.sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+     causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.is-mobile .sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+     `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+.search {
+  background: #f5f6f8;
+  border: none !important;
+  width: 88%;
+}
+
+.search:focus {
+  box-shadow: none;
+}
+.search-box {
+  background: #f5f6f8;
+  border-radius: 24px;
+  width: 30%;
+  height: 70%;
+}
+.mat-drawer-side {
+  border-right: none !important;
+}
+.mat-drawer {
+  background-color: white !important;
+}
+.mat-toolbar.mat-primary {
+  background: white !important;
+}
+.mat-list-item {
+  color: #a4a4b1 !important;
+  font-weight: bold;
+}
+.text-color {
+  color: #9b9ba7;
+}
+.nav-link.active {
+  border-bottom: 4px solid #3f6cff;
+  position: relative;
+  padding: 14px 0px;
+  margin-right: 60px;
+}
+.nav-link.active:after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+}
+.nav-link {
+  border-bottom: 4px solid transparent;
+  position: relative;
+  padding: 14px 0px;
+  margin-right: 60px;
+}
+.nav-link:after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+}
+.half-a-border-on-top {
+  border-top: 1px solid black;
+  position: relative;
+}
+.half-a-border-on-top:after {
+  padding: 0;
+  margin: 0;
+  display: block; /* probably not really needed? */
+  content: "";
+  width: 50%;
+  height: 1.1px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+.mat-drawer {
+  background-color: black;
+  color: #fff;
+}
